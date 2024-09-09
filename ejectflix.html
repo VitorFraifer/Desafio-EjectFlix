@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EjectFlix</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="ejectflix.css">
+    
+    <script src="https://kit.fontawesome.com/dff5e46bd7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<body>
+    <div class="container"> 
+        <img src="logo-ejectlix - Copia.png" class="page-logo"
+            alt="">
+        <p class="page-subtitle">
+            Adicione um filme na lista:  
+            <i class="fa-regular fa-pen-to-square"></i>
+        </p>
+        <br>
+        <div class="form-wrapper">
+            <input type="text" id="filme-imagem" name="filme" placeholder="Insira endereço de imagem" class="input-filme">
+            <input type="text" id="filme-nome" name="filme" placeholder="Insira o nome de filme" class="input-filme">
+            <input type="text" id="filme-ano" name="filme" placeholder="Insira o ano do lançamento" class="input-filme">
+            <button onClick="adicionarFilme()" class="botao-input">Adicionar Filme</button>
+        </div>
+        <br>
+        <p class="page-subtitle">
+            Procure por um filme na lista:
+            
+        </p>
+        <br>
+        </p>
+        <div class="form-wrapper-2">
+            <input type="text" id="filme-imagem" name="filme" placeholder="Pesquise por um filme" class="input-filme">
+        </div>
+
+    </div>
+    <div id="listaFilmes">
+        
+        <div class="secao-filme">
+            <button class="icone-edição"><i class="fa-regular fa-pen-to-square" ></i></button>
+             <img src="https://img.elo7.com.br/product/zoom/2692755/poster-o-senhor-dos-aneis-a-sociedade-do-anel-lo05-90x60-cm-geek.jpg" alt="" class="filme-imagem">
+             <p class="filme-titulo">Senhor dos anéis: A sociedade do anel, 2001.</p>
+             <ion-icon name="search-outline"></ion-icon>
+        </div>
+        <div class="secao-filme">
+            <button class="icone-edição"><i class="fa-regular fa-pen-to-square" ></i></button>
+             <img src="https://img.elo7.com.br/product/zoom/26927C9/poster-o-senhor-dos-aneis-as-duas-torres-lo01-tam-90x60-cm-presente-geek.jpg" alt="" class="filme-imagem">
+             <p class="filme-titulo">Senhor dos anéis: As duas torres, 2002.</p>
+        </div>
+        <div class="secao-filme">
+            <button class="icone-edição"><i class="fa-regular fa-pen-to-square" ></i></button>
+             <img src="https://img.elo7.com.br/product/main/2692979/big-poster-o-senhor-dos-aneis-o-retorno-do-rei-lo11-90x60-cm-poster-de-filme.jpg" alt="" class="filme-imagem">
+             <p class="filme-titulo">Senhor dos anéis: O retorno do rei, 2003.</p>
+        </div>
+        <div class="secao-filme">
+            <button class="icone-edição"><i class="fa-regular fa-pen-to-square" ></i></button>
+             <img src="https://img.elo7.com.br/product/zoom/24B46D2/poster-papel-de-parede-harry-potter-250-cm-x-400-cm-posteres.jpg" alt="" class="filme-imagem">
+             <p class="filme-titulo">Harry Potter e a Pedra Filosofal, 2001.</p>
+        </div>
+        <div class="secao-filme">
+            <button class="icone-edição"><i class="fa-regular fa-pen-to-square" ></i></button>
+             <img src="https://img.elo7.com.br/product/zoom/24B26AA/quadro-poster-harry-potter-250-cm-x-400-cm-quadro.jpg" alt="" class="filme-imagem">
+             <p class="filme-titulo">Harry Potter e a Câmara Secreta, 2002.</p>
+        </div>
+        <div class="secao-filme">
+            <button class="icone-edição"><i class="fa-regular fa-pen-to-square" ></i></button>
+             <img src="https://img.elo7.com.br/product/main/2657A05/big-poster-harry-potter-e-o-prisioneiro-de-azkaban-lo2-90x60-geek.jpg" alt="" class="filme-imagem">
+             <p class="filme-titulo">Harry Potter e o Prisioneiro de Azkaban, 2004.</p>
+        </div>
+        <div class="secao-filme">
+            <button class="icone-edição"><i class="fa-regular fa-pen-to-square" ></i></button>
+             <img src="https://img.elo7.com.br/product/main/265774E/big-poster-harry-potter-e-o-calice-de-fogo-lo02-90x60-cm-geek.jpg" alt="" class="filme-imagem">
+             <p class="filme-titulo">Harry Potter e o Cálice de fogo, 2005.</p>
+        </div>
+        <div class="secao-filme">
+            <button class="icone-edição"><i class="fa-regular fa-pen-to-square" ></i></button>
+             <img src="https://img.elo7.com.br/product/main/26579A7/big-poster-harry-potter-e-a-ordem-da-fenix-lo03-tam-90x60-cm-geek.jpg" alt="" class="filme-imagem">
+             <p class="filme-titulo">Harry Potter e a Orden da fênix, 2007.</p>
+        </div>
+        <div class="secao-filme">
+            <button class="icone-edição"><i class="fa-regular fa-pen-to-square" ></i></button>
+             <img src="https://img.elo7.com.br/product/zoom/2657947/big-poster-harry-potter-e-o-enigma-do-principe-lo08-90x60-cm-presente-nerd.jpg" alt="" class="filme-imagem">
+             <p class="filme-titulo">Harry Potter e o Enigma do Principe, 2009.</p>
+        </div>
+        <div class="secao-filme">
+            <button class="icone-edição"><i class="fa-regular fa-pen-to-square" ></i></button>
+             <img src="https://image.tmdb.org/t/p/w500/67FVFOTaeBUQnimhCWpUkDawDct.jpg" alt="" class="filme-imagem">
+             <p class="filme-titulo">Harry Potter e as Reliquias da Morte Parte 1, 2010.</p>
+        </div>
+        <div class="secao-filme">
+            <button class="icone-edição"><i class="fa-regular fa-pen-to-square" ></i></button>
+            <img src="https://img.elo7.com.br/product/zoom/2657658/big-poster-harry-potter-e-as-reliquias-da-morte-lo04-90x60-poster-cinema.jpg" alt="" class="filme-imagem">
+            <p class="filme-titulo">Harry Potter e as Reliquias da Morte Parte 2, 2011.</p>
+       </div>
+        
+        
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="logo.png" alt="" class="eject-logo">
+    </a>
+
+    <script src="ejectflix.js"></script>
+    
+</body>
+</html>
