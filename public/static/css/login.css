@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+body{
+    overflow-x: hidden;
+}
+
+.background {
+    background-image: url(../img/backgroundimg.png); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative; /* Necessário para a overlay */
+  }
+
+  /* Película preta transparente */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Película preta com transparência */
+    z-index: 1; /* Para garantir que a película fique sobre a imagem */
+  }
+
+  /* Conteúdo da página */
+  .content {
+    position: relative;
+    z-index: 2; /* Para garantir que o conteúdo fique acima da película */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  .header{
+    width: 100%;
+    padding-left: 10%;
+  }
+
+  .login-card{
+    width: 28.70vw;
+    height: 65vh;
+    border-radius: 10px;
+    background-color: #BABABA66;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Hammersmith One;
+    justify-content: space-evenly;
+  }
+
+  form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.titulo-card{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+}
+
+.form-item{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.form-item input{
+    border-radius: 5px;
+    background-color: #C0C0C0CC;
+    height: 6vh;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    padding-left: 15px;
+    font-family: Hammersmith One;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17.5px;
+    text-align: left;
+
+
+}
+
+.form-item input::placeholder{
+    color: white;
+}
+
+button{
+    width: 90%;
+    background-color: #E3C72DCC;
+    border-radius: 5px;
+    height: 6vh;
+    border-radius: 5px;
+    border: none;
+    font-family: Hammersmith One;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.5px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+a{
+    cursor: pointer;
+}
+
+.footer{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 7vh;
+    justify-content: center;
+    font-family: Hammersmith One;
+}
+
+.person-footer{
+    display: flex;
+    margin-right: 10px;
+}
+
+.person-footer img{
+    margin-left: 5px;
+}
