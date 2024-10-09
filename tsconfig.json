@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                          // Define a versão do JavaScript de saída
+    "module": "commonjs",                     // Define o sistema de módulos
+    "strict": true,                           // Habilita todas as verificações de tipo estritas
+    "esModuleInterop": true,                  // Habilita interoperação com módulos ES
+    "outDir": "./dist",                       // Diretório de saída para arquivos compilados
+    "rootDir": "./src",                       // Diretório raiz dos arquivos TypeScript
+    "sourceMap": true,                        // Gera arquivos de mapa de origem
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true  // Garante consistência de maiúsculas/minúsculas nos nomes de arquivos
+  },
+  "include": ["src/**/*"],                    // Inclui todos os arquivos TypeScript na pasta src
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
